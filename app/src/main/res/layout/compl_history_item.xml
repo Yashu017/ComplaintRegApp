@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+
+        app:cardCornerRadius="12dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardElevation="4dp">
+
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/completed"
+            android:id="@+id/oval"
+            />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rectangel"
+            android:layout_below="@id/oval"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp">
+
+
+            <TextView
+                android:id="@+id/textView1ComplainHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#3f48cc"
+
+                android:layout_marginTop="15dp"
+                android:layout_alignParentStart="true"
+                android:text="@string/ComplaintID"
+                android:textSize="20sp" />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/textView1ComplainHist"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:outlineSpotShadowColor="#000"
+                app:srcCompat="@drawable/ic_info_black_24dp"/>
+
+
+
+            <TextView
+                android:id="@+id/textView2ComplainHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1ComplainHist"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:text="Action" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textView2ComplainHist"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/ic_compare_arrows_black_24dp"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="15dp"
+
+                android:text="To : "
+                android:layout_below="@id/textView2ComplainHist"
+                android:layout_alignParentEnd="true"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/fromComplainHist"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2ComplainHist"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentStart="true"
+                android:text="From : " />
+
+            <TextView
+                android:id="@+id/getTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+
+                android:text="N/A"
+                android:layout_below="@id/to"
+                android:layout_alignParentStart="true"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/textView4ComplainHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromComplainHist"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:text="00:00" />
+
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

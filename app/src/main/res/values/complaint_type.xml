@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="complaint_type">
+        <item>Select Complaint Type</item>
+        <item>Electrical Related</item>
+        <item>Civil Work Related</item>
+        <item>IT Related</item>
+        <item>House Keeping Related</item>
+
+    </string-array>
+
+
+</resources>

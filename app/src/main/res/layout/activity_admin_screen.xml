@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="my.app.complainregapp.AdminScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/header_background">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+
+            android:id="@+id/lg"
+            android:src="@drawable/dm"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+
+            android:id="@+id/lg1"
+            android:src="@drawable/nic"/>
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/lg"
+            android:background="@drawable/ic_lock_open_black_24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+
+            android:id="@+id/logoutAdmin"
+            />
+        <TextView
+            android:id="@+id/normalText"
+            android:layout_below="@+id/lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Admin"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_rectangle_backgrounf"
+            android:orientation="horizontal"
+            android:layout_below="@+id/normalText">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:id="@+id/searchSecond1"
+                android:imeOptions="actionSearch"
+                android:clickable="true"
+
+            android:focusableInTouchMode="true"
+                android:inputType="text"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/colorAccent"
+                android:hint="Search Complaint By ID"
+                android:importantForAutofill="no"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:padding="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="168dp"
+        android:id="@+id/notificationRecycler"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_height="250dp"
+            android:layout_width="240dp"
+            android:id="@+id/animation_view"
+            android:scaleType="fitCenter"
+            app:lottie_rawRes="@raw/loading"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wait"
+            android:layout_marginTop="-133dp"
+            android:layout_below="@+id/animation_view"
+            android:gravity="center"
+            android:textColor="#003663"
+            android:text="Loading. Please Wait...."
+            android:layout_centerInParent="true"
+            android:textSize="15sp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

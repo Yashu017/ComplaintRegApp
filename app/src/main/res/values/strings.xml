@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Complaint Monitoring System</string>
+    <string name="login">Login</string>
+    <string name="AdminControl">Admin Login</string>
+    <string name="home">Home</string>
+    <string name="history">Complaint History</string>
+    <string name="help">Contact Us</string>
+    <string name="welcome">Welcome. Please enter your details.</string>
+    <string name="name">Enter you first name</string>
+    <string name="designation">Designation</string>
+    <string name="branch">Branch</string>
+    <string name="submit">Submit</string>
+    <string name="url">https://nicproject.herokuapp.com/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enterDet">Register your complaint.</string>
+    <string name="complaint">Description of complaint</string>
+    <string name="address">Type your address</string>
+    <string name="forwardTo">Send To</string>
+    <string name="AgreeToCompl">Launch a new Complain</string>
+    <string name="ComplaintID">Complaint ID</string>
+    <string name="status">Current Status</string>
+    <string name="complaintTitle">Subject (Upto 1-2 lines)</string>
+    <string name="Admin">Admin</string>
+    <string name="ComplainHis">Complaint History</string>
+    <string name="CurrentBRanch">Current Branch</string>
+    <string name="watchComplain">Details of complain is :</string>
+    <string name="complaintDes">Description</string>
+    <string name="ComplainTO">To</string>
+    <string name="from">From</string>
+    <string name="internet_error">Mobile Data is off</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="forwardTo">
+        <item>Forward To</item>
+        <item>DM</item>
+        <item>ADM</item>
+        <item>SDM HQ</item>
+        <item>SDM ChanakyaPuri</item>
+        <item>SDM VasantVihar</item>
+        <item>IT Branch</item>
+        <item>Caretaker</item>
+    </string-array>
+</resources>

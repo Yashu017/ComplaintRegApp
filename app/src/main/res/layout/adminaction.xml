@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+
+
+
+    android:id="@+id/passFirst"
+    android:visibility="visible"
+
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="150dp"
+    android:layout_marginEnd="15dp"
+
+    android:background="@drawable/passback"
+    app:layout_constraintCircleRadius="50dp"
+
+    android:gravity="center"
+    android:padding="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    app:layout_constraintVertical_weight="1">
+
+
+    <TextView
+        android:id="@+id/textraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+
+        android:padding="4dp"
+        android:text="Please select given action"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/branchPassw"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/textraw"
+        android:foreground="@drawable/dat"
+        android:hint="@string/branch"
+        android:padding="6dp"
+        android:textColor="#B0302F2F"
+        android:textColorHint="#B0302F2F"
+        android:textSize="18sp" />
+
+
+
+
+    <Button
+        android:id="@+id/yesPass"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/branchPassw"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttob"
+        android:padding="4dp"
+        android:layout_marginBottom="20dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+
+
+        />
+    <Button
+        android:id="@+id/cancelPass"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/branchPassw"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/buttob"
+        android:padding="4dp"
+        android:text="Cancel"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_below="@+id/yesPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-55dp"
+        android:id="@+id/progress_pass"/>
+</RelativeLayout>

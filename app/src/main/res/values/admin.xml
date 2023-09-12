@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="admin">
+        <item>Select Admin</item>
+        <item>Admin</item>
+        <item>Non-Admin</item>
+    </string-array>
+
+</resources>

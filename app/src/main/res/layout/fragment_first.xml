@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="my.app.complainregapp.FirstFragment">
+    
+    
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:id="@+id/laypout_Header"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lg"
+            android:src="@drawable/dm"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/lg1"
+            android:src="@drawable/nic"/>
+
+
+        <TextView
+            android:id="@+id/hellofirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Hi ,"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lg"/>
+
+
+        <TextView
+            android:id="@+id/userNameFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:text="User"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/hellofirst"
+            app:layout_constraintTop_toBottomOf="@+id/lg" />
+        
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/menu"
+            android:clickable="true"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="Admin_Menu"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userNameFirst"
+            app:layout_constraintBottom_toBottomOf="@+id/userNameFirst"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/logout"
+            android:clickable="true"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="Logout"
+            android:visibility="gone"
+            android:src="@drawable/ic_lock_open_black_24dp"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userNameFirst"
+            app:layout_constraintBottom_toBottomOf="@+id/userNameFirst"/>
+
+
+
+        <TextView
+            android:id="@+id/notificationBellfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/CurrentBRanch"
+            android:text="Branch"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginStart="15dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf= "parent"
+            app:layout_constraintTop_toBottomOf="@+id/hellofirst" />
+
+
+        <TextView
+            android:id="@+id/AdminTExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/CurrentBRanch"
+            android:text="Admin"
+            android:layout_marginEnd="15dp"
+            android:gravity="end"
+
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@id/notificationBellfirst"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificationBellfirst" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/laypout_Header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="fill_vertical"
+            >
+
+
+
+
+            <RelativeLayout
+
+                android:id="@+id/typeTemp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/white_rectangle_backgrounf"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintVertical_weight="1">
+
+                <ImageView
+                    android:id="@+id/tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/todo" />
+
+
+                <RelativeLayout
+                    android:id="@+id/cardLFirstYes"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/forlogin"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:id="@+id/txtLyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="Register Complaint"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintVertical_bias="0.512" />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+<!--            <RelativeLayout-->
+
+<!--                android:id="@+id/adminFirst"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="35dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginEnd="35dp"-->
+<!--                android:background="@drawable/white_rectangle_backgrounf"-->
+<!--                android:clickable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="10dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/typeTemp"-->
+
+<!--                app:layout_constraintVertical_weight="1">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/adminIMg"-->
+<!--                    android:layout_width="190dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/admin" />-->
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+
+<!--                    android:id="@+id/AdminControl"-->
+<!--                    android:clickable="true"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/forlogin"-->
+<!--                    android:layout_below="@+id/adminIMg"-->
+<!--                    android:foreground="?android:attr/selectableItemBackground"-->
+
+<!--                    >-->
+
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/txtLyesAdmin"-->
+<!--                            android:text="Admin Login"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintVertical_bias="0.512"/>-->
+
+
+<!--                </RelativeLayout>-->
+
+
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/typeTempfirst"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/white_rectangle_backgrounf"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            app:layout_constraintVertical_weight="1">
+
+                            <TextView
+                                android:id="@+id/titlefirst"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/enterDet"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_below="@+id/titlefirst"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/complainType"
+                                >
+                                <Spinner
+                                    android:id="@+id/complintTypeSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="fill"
+                                    android:layout_margin="10dp"
+                                    android:foreground="@drawable/dat"
+                                    android:spinnerMode="dropdown"
+
+                                    android:textColor="#000000"
+                                    android:textColorHint="#B0302F2F"
+
+                                    android:textSize="18sp" />
+                            </RelativeLayout>
+
+
+                            <EditText
+                                android:id="@+id/titleComp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dat"
+                                android:ellipsize="start"
+                                android:hint="@string/complaintTitle"
+                                android:inputType="textShortMessage"
+                                android:singleLine="true"
+                                android:maxLines="15"
+                                android:minHeight="?actionBarSize"
+                                android:maxHeight="?actionBarSize"
+                                android:scrollbars="vertical"
+                                android:padding="6dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+                                android:textSize="18sp"
+                                android:layout_below="@+id/complainType"/>
+
+
+                            <EditText
+                                android:id="@+id/Complainfirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dat"
+                                android:ellipsize="start"
+                                android:hint="@string/complaint"
+                                android:inputType="textMultiLine"
+                                android:maxLines="15"
+                                android:minHeight="?actionBarSize"
+                                android:maxHeight="?actionBarSize"
+                                android:scrollbars="vertical"
+                                android:padding="6dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+                                android:textSize="18sp"
+                                android:layout_below="@+id/titleComp"/>
+
+
+                            <AutoCompleteTextView
+                                android:id="@+id/addressfirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dat"
+                                android:ellipsize="start"
+                                android:hint="@string/address"
+                                android:inputType="textMultiLine"
+                                android:maxLines="15"
+                                android:minHeight="?actionBarSize"
+                                android:maxHeight="?actionBarSize"
+                                android:scrollbars="vertical"
+                                android:layout_below="@+id/Complainfirst"
+                                android:padding="6dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+                                android:textSize="18sp" />
+
+
+                            <EditText
+                                android:id="@+id/branchMainfirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:background="@drawable/dat"
+                                android:inputType="text"
+                                android:hint="Complaint By"
+                                android:padding="6dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+                                android:layout_below="@+id/addressfirst"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/timeMain"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/dat"
+                                android:inputType="text"
+                                android:hint="Current Date and Time"
+                                android:padding="6dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+                                android:layout_below="@+id/branchMainfirst"
+                                android:textSize="18sp" />
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_below="@+id/timeMain"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/forwardTofirstLAyout"
+                           >
+                            <Spinner
+                                android:id="@+id/forwardTofirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="fill"
+                                android:layout_margin="10dp"
+                                android:foreground="@drawable/dat"
+                                android:spinnerMode="dropdown"
+
+                                android:textColor="#000000"
+                                android:textColorHint="#B0302F2F"
+
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/cardLFirst"
+                                android:clickable="true"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="25dp"
+                                android:layout_below="@+id/forwardTofirstLAyout"
+                                android:layout_marginStart="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/forlogin"
+                                android:foreground="?android:attr/selectableItemBackground"
+
+                                >
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="8dp"
+                                    android:id="@+id/consLfirst">
+                                    <ProgressBar
+                                        android:id="@+id/progressBarfirst"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:indeterminate="true"
+                                        android:indeterminateTint="@color/white"
+                                        android:indeterminateTintMode="src_atop"
+                                        android:layout_marginEnd="16dp"
+                                        android:visibility="gone"
+                                        android:elevation="2dp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toStartOf="@+id/txtLfirst"
+                                        app:layout_constraintTop_toTopOf="parent"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/txtLfirst"
+                                        android:text="@string/submit"
+                                        android:textColor="#fff"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintVertical_bias="0.512"/>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
